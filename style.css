@@ -1,0 +1,90 @@
+html , body , h1{
+    margin: 0 !important;
+    padding: 0;
+}
+
+*{
+    color: white;
+    list-style: none;
+}
+
+.main-hero{
+    background-image: url("https://lp-cms-production.imgix.net/2019-06/553006273_medium.jpg?fit=crop&w=1680&h=620&auto=format&blendMode=multiply&blend=%23ccc&ixlib=react-8.6.4&w=1680&h=620&dpr=1");
+    background-size: cover;
+    padding: 50px;
+}
+
+.nav-bar{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+.nav-search{
+    align-items: center;
+}
+
+.nav-links{
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+}
+
+.sign-in-btn{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 5px 20px;
+}
+
+.search-btn{
+    background-color: transparent;
+    border: none;
+    font-size: 28px;
+}
+
+.main-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.search-recommend{
+    display: flex;
+    width: 60%;
+    border-radius: 50px;
+    box-shadow: rgb(255 249 249 / 35%) 0px 0px 0px 13px;
+}
+
+.dropdown{
+    flex-grow: 2;
+}
+
+.search-input{
+    flex-grow: 2;
+}
+
+.dropdown-btn{
+    background-color: white;
+    color: black;
+    height: 45px;
+    border-radius: 20px 0px 0px 20px!important;
+}
+
+.explore-btn{
+    width: 20%;
+    border-radius: 0px 20px 20px 0px!important;
+}
