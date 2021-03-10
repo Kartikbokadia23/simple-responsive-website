@@ -378,7 +378,7 @@ img{
 }
 
 .ln-small-tab + .ln-small-tab{
-    margin-left: 30px;
+    margin-left: 100px;
 }
 
 .covid-travel{
@@ -441,3 +441,77 @@ img{
     margin-top: 45px;
 }
 
+
+.multi-item-carousel .carousel-inner > .item {
+    transition: transform 0.4s linear 0s;
+  }
+  .multi-item-carousel .carousel-inner .active.left {
+    left: -33%;
+  }
+  .multi-item-carousel .carousel-inner .active.right {
+    left: 33%;
+  }
+  .multi-item-carousel .carousel-inner .next {
+    left: 33%;
+  }
+  .multi-item-carousel .carousel-inner .prev {
+    left: -33%;
+  }
+  @media all and (transform-3d), (-webkit-transform-3d) {
+    .multi-item-carousel .carousel-inner > .item {
+      transition: transform 0.4s linear 0s;
+      transition: transform 0.4s linear 0s;
+      -webkit-backface-visibility: visible;
+              backface-visibility: visible;
+    }
+}
+  .multi-item-carousel .carouse-control.left,
+  .multi-item-carousel .carouse-control.right {
+    background-image: none;
+  }
+
+
+  .item > div > a > img{
+      margin: auto;
+  }
+
+  .item > div{
+      position: relative;
+  }
+
+  .item > div > span {
+      position: absolute;
+      left: 80px;
+      bottom: 10px;
+  }
+
+  .featured-video-section{
+    background-color: rgb(51, 49, 49);
+    padding: 50px;
+  }
+
+  .featured-video{
+      position: relative;
+  }
+
+  .featured-video > span{
+      position: absolute;
+      bottom: 60px;
+      left: 30px;
+  }
+
+
+.footer-links{
+    display: flex;
+    color: black;
+    justify-content: space-around;
+}
+
+.footer-link{
+    color: black;
+}
+
+.footer-link > ul >li{
+    color: black;
+    text-align: left;
+}
