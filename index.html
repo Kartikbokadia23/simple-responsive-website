@@ -9,7 +9,6 @@
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src='index.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
@@ -17,33 +16,191 @@
     <div class = "main-hero row">
 
         <div class="nav-bar mb-5">
-            <div class="nav nav-search">
+            <div id="searchbtn" class="nav nav-search">
                 <i class="fa fa-search fa-2x" aria-hidden="true"></i>
                 <button class="search-btn">Search Lonely planet</button>
             </div>
 
-            <div class="nav nav-logo">
-                <h1>Lonely Planet</h1>
+            <div id="myModal" class="modals">
+
+                <!-- Modal content -->
+                <div class="modals-content">
+                  <span class="close">&times;</span>
+                  <input class="form-control mr-sm-2 w-75" type="search" placeholder="Search" aria-label="Search">
+                  <hr class="hr">
+                  <div class="search-place">
+                      <h5 class="py-2">Explore best in the world</h5>
+                      <h6 class="py-2"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Greece</h6>
+                      <h6 class="py-2"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Greece</h6>
+                      <h6 class="py-2"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Greece</h6>
+                  </div>
+
+                  <div class="search-top-stories">
+                    <h5>Top Stories</h5>
+                      <div class="search-top-story">
+                          <div class="top-story-text">
+                            <h3>Some text</h3>
+                          </div>
+                          <div class="top-story-image">
+                            <img src="https://lp-cms-production.imgix.net/2020-11/BiT-OG-image.jpg" height="70" width="90">
+                          </div>
+                      </div>
+                      <hr class="hr">
+                      <div class="search-top-story">
+                        <div class="top-story-text">
+                          <h3>Some text</h3>
+                        </div>
+                        <div class="top-story-image">
+                          <img src="https://lp-cms-production.imgix.net/2020-11/BiT-OG-image.jpg" height="70" width="90">
+                        </div>
+                    </div>
+                    <hr class="hr">
+                    <div class="search-top-story">
+                        <div class="top-story-text">
+                          <h3>Some text</h3>
+                        </div>
+                        <div class="top-story-image">
+                          <img src="https://lp-cms-production.imgix.net/2020-11/BiT-OG-image.jpg" height="70" width="90">
+                        </div>
+                    </div>
+                    <hr class="hr">
+                    <div class="search-top-story">
+                        <div class="top-story-text">
+                          <h3>Some text</h3>
+                        </div>
+                        <div class="top-story-image">
+                          <img src="https://lp-cms-production.imgix.net/2020-11/BiT-OG-image.jpg" height="70" width="90">
+                        </div>
+                    </div>
+                    <hr class="hr">
+                  </div>
+                </div>
+
             </div>
 
+            <div class="nav nav-logo">
+                <h1 class="text-center">Lonely Planet</h1>
+            </div>
+
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <span class="hamburger-menu" onclick="openNav()">&#9776;</span>
+
             <ul class=" nav nav-links">
-                <li class="nav-link">Destinations</li>
-                <li class="nav-link">Video</li>
-                <li class="nav-link">Stories</li>
-                <li class="nav-link">bookings</li>
-                <li class="nav-link">Shop</li>
+                <li class="nav-link tooltips">Destinations
+                    <div class="tooltipstext">
+                        <div class="drop-header mb-4">
+                            <img src="https://lp-cms-production.imgix.net/2020-11/BiT-OG-image.jpg" height="60" width="80">
+                            <h4 class="tooltip-header text-left ml-2">Best In Travel 2021</h4>
+                        </div>
+                        <ul class="tooltip-links">
+                            <li class="tooltip-link text-left">Asia</li>
+                            <li class="tooltip-link text-left">Africa</li>
+                            <li class="tooltip-link text-left">Europe</li>
+                            <li class="tooltip-link text-left">Russia</li>
+                            <li class="tooltip-link text-left">India</li>
+                            <li class="tooltip-link text-left">America</li>
+                        </ul>
+                        <div>
+                            <button type="button" class="btn btn-primary w-100 mt-2">View All Destinations</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-link tooltips">Video
+                    <div class="tooltipstext">
+                        <div class="drop-header mb-4">
+                            <img src="https://lp-cms-production.imgix.net/2020-11/BiT-OG-image.jpg" height="60" width="80">
+                            <h4 class="tooltip-header text-left">Best In Travel 2021</h4>
+                        </div>
+                        <ul class="tooltip-links">
+                            <li class="tooltip-link text-left">Asia</li>
+                            <li class="tooltip-link text-left">Africa</li>
+                            <li class="tooltip-link text-left">Europe</li>
+                            <li class="tooltip-link text-left">Russia</li>
+                            <li class="tooltip-link text-left">India</li>
+                            <li class="tooltip-link text-left">America</li>
+                        </ul>
+                        <div>
+                            <button type="button" class="btn btn-primary w-100 mt-2">View All Destinations</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-link tooltips">Stories
+                    <div class="tooltipstext">
+                        <div class="drop-header mb-4">
+                            <img src="https://lp-cms-production.imgix.net/2020-11/BiT-OG-image.jpg" height="60" width="80">
+                            <h4 class="tooltip-header text-left">Best In Travel 2021</h4>
+                        </div>
+                        <ul class="tooltip-links">
+                            <li class="tooltip-link text-left">Asia</li>
+                            <li class="tooltip-link text-left">Africa</li>
+                            <li class="tooltip-link text-left">Europe</li>
+                            <li class="tooltip-link text-left">Russia</li>
+                            <li class="tooltip-link text-left">India</li>
+                            <li class="tooltip-link text-left">America</li>
+                        </ul>
+                        <div>
+                            <button type="button" class="btn btn-primary w-100 mt-2">View All Destinations</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-link tooltips">bookings
+                    <div class="tooltipstext">
+                        <div class="drop-header mb-4">
+                            <img src="https://lp-cms-production.imgix.net/2020-11/BiT-OG-image.jpg" height="60" width="80">
+                            <h4 class="tooltip-header text-left">Best In Travel 2021</h4>
+                        </div>
+                        <ul class="tooltip-links">
+                            <li class="tooltip-link text-left">Asia</li>
+                            <li class="tooltip-link text-left">Africa</li>
+                            <li class="tooltip-link text-left">Europe</li>
+                            <li class="tooltip-link text-left">Russia</li>
+                            <li class="tooltip-link text-left">India</li>
+                            <li class="tooltip-link text-left">America</li>
+                        </ul>
+                        <div>
+                            <button type="button" class="btn btn-primary w-100 mt-2">View All Destinations</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-link tooltips">Shop
+                    <div class="tooltipstext">
+                        <div class="drop-header mb-4">
+                            <img src="https://lp-cms-production.imgix.net/2020-11/BiT-OG-image.jpg" height="60" width="80">
+                            <h4 class="tooltip-header text-left">Best In Travel 2021</h4>
+                        </div>
+                        <ul class="tooltip-links">
+                            <li class="tooltip-link text-left">Asia</li>
+                            <li class="tooltip-link text-left">Africa</li>
+                            <li class="tooltip-link text-left">Europe</li>
+                            <li class="tooltip-link text-left">Russia</li>
+                            <li class="tooltip-link text-left">India</li>
+                            <li class="tooltip-link text-left">America</li>
+                        </ul>
+                        <div>
+                            <button type="button" class="btn btn-primary w-100 mt-2">View All Destinations</button>
+                        </div>
+                    </div>
+                </li>
                 <li class="nav-link"><button class="sign-in-btn">Sign In</button></li>
             </ul>
         </div>
 
         <div class="main-search">
-            <h1>Explore Best In Travel 2021</h1>
+            <h1 class="text-center">Explore Best In Travel 2021</h1>
             <div class="search-recommend my-5">
                 <div class="dropdown">
                     <button class="dropdown-btn btn btn-secondary w-100 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Dropdown button
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
                       <a class="dropdown-item" href="#">Action</a>
                       <a class="dropdown-item" href="#">Another action</a>
                       <a class="dropdown-item" href="#">Something else here</a>
@@ -53,11 +210,13 @@
                     <input type="text" class="form-control h-100">
                 </div>
 
-                <button type="button" class="explore-btn btn btn-primary">Explore</button>
+                <button type="button" class="explore-btn btn btn-primary">Go</button>
             </div>
 
             <img src="https://lonelyplanetstatic.imgix.net/marketing/2021/BIT/BiT_2021_logo.svg" height="100" width="100">
         </div>
     </div>
+
+    <script src='index.js'></script>
 </body>
 </html>
