@@ -380,3 +380,64 @@ img{
 .ln-small-tab + .ln-small-tab{
     margin-left: 30px;
 }
+
+.covid-travel{
+    padding: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.covid-tabs-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.covid-tab{
+    color: black;
+    padding: 20px;
+    height: 380px;
+    position: relative;
+}
+
+.covid-tab > button{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+
+.covid-tabs-1{
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 12%), 0px 0px 15px 1px rgb(35 29 29 / 60%);
+    border-radius: 5px;
+
+}
+
+.covid-head{
+    padding: 0px 100px;
+}
+
+.covid-video{
+    position: relative;
+}
+
+
+.covid-video > h3{
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+}
+
+.covid-video > button{
+    position: absolute;
+    left: 20px;
+    bottom: 10px
+}
+
+.covid-video + .covid-video{
+    margin-top: 45px;
+}
+
